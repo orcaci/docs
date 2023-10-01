@@ -28,3 +28,69 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+
+
+
+:root {
+  --custom-primary-color: #FF66C4; /* Primary color */
+  --custom-primary-lighter: #FF90DB; /* Lighter variation of primary color */
+  --custom-primary-lightest: #FFB4E5; /* Lightest variation of primary color */
+  --custom-primary-darker: #FF3399; /* Darker variation of primary color */
+  --custom-primary-darkest: #FF0077; /* Darkest variation of primary color */
+}
+
+:root {
+  --custom-secondary-color: #5170FF; /* Secondary color */
+  --custom-secondary-lighter: #7894FF; /* Lighter variation of secondary color */
+  --custom-secondary-lightest: #A7BFFF; /* Lightest variation of secondary color */
+  --custom-secondary-darker: #3A4FBF; /* Darker variation of secondary color */
+  --custom-secondary-darkest: #001F7F; /* Darkest variation of secondary color */
+}
+
+/* Override link color */
+a {
+  color: var(--custom-primary-color);
+}
+
+/* Override link hover color */
+a:hover {
+  color: var(--custom-secondary-color);
+}
+
+/* Override button color */
+.button {
+  background-color: var(--custom-secondary-color);
+  color: white;
+}
+
+/* Override button hover color */
+.button:hover {
+  background-color: var(--custom-primary-color);
+}
+
+/* Additional styles using lighter, lightest, darker, darkest variations */
+.some-element {
+  background-color: var(--custom-primary-lighter);
+}
+
+.some-other-element {
+  background-color: var(--custom-secondary-lightest);
+}
+
+.another-element {
+  background-color: var(--custom-primary-darker);
+}
+
+.yet-another-element {
+  background-color: var(--custom-secondary-darker);
+}
+
+.the-darkest-element {
+  background-color: var(--custom-primary-darkest);
+}
+
+.the-darker-element {
+  background-color: var(--custom-secondary-darkest);
+}
